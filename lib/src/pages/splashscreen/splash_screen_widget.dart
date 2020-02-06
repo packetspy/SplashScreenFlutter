@@ -1,6 +1,6 @@
 import 'package:flare_flutter/flare_actor.dart';
 import 'package:flutter/material.dart';
-import 'package:splash_screen_flutter/main.dart';
+import 'package:splash_screen_flutter/src/pages/home/home_page.dart';
 import 'package:splashscreen/splashscreen.dart';
 
 class SplashScreenWidget extends StatelessWidget {
@@ -12,7 +12,7 @@ class SplashScreenWidget extends StatelessWidget {
         SplashScreen(
           seconds: 3,
           backgroundColor: Colors.white,
-          navigateAfterSeconds: MyHomePage(title: "Flutter Demo"),
+          navigateAfterSeconds: HomePage(),
           loaderColor: Colors.transparent,
         ),
         Column(
